@@ -73,13 +73,16 @@ A estrutura básica do projeto é a seguinte:
 - `database`: Contém os scripts SQL para inicialização e população do banco de dados.
 
 ### Modelo Conceitual
-![armazem_logico]![image](https://github.com/Kal-0/DECOY/blob/main/warehouse/armazem_conceitual.png)
+![armazem_conceitual](https://github.com/user-attachments/assets/76cb477c-6cd2-4bf4-9ba2-1a33c8cbc2fe)
+
 
 ### Modelo Lógico
-![armazem_logico](https://github.com/Kal-0/DECOY/blob/main/warehouse/armazem_logico.png)
+![armazem_logico](https://github.com/user-attachments/assets/6cee8a60-4776-4eb0-a9f5-2bf509931d8d)
+
 
 ### Diagrama de Fluxo
-![warehouse_flux](https://github.com/Kal-0/DECOY/blob/main/warehouse/warehouse_flux.png)
+![warehouse_flux](https://github.com/user-attachments/assets/de9a8e1b-fb5f-4427-898f-3fd038e44693)
+
 
 ### Screencast
 [![Screencast](https://img.youtube.com/vi/ZzyJMsNny6M/0.jpg)](https://youtu.be/ZzyJMsNny6M)
