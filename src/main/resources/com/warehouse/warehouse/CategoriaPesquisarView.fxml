@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_LEFT" spacing="20" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.warehouse.warehouse.controller.CategoriaPesquisarController">
+    <Label fx:id="titleLabel" style="-fx-font-size: 24px;" text="Pesquisar Categoria" />
+    <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" maxWidth="700" minWidth="700" vbarPolicy="AS_NEEDED">
+        <VBox alignment="TOP_LEFT" maxWidth="700">
+            <HBox alignment="CENTER_LEFT" maxWidth="780" spacing="20">
+                <VBox maxWidth="280" minWidth="280" spacing="10" style="-fx-padding: 10;">
+                    <TextField fx:id="searchNameField" maxWidth="280" promptText="Nome da Categoria" />
+                    <TextField fx:id="searchIdField" maxWidth="280" promptText="ID da Categoria" />
+                    <Button maxWidth="80" onAction="#handleSearch" text="Pesquisar" />
+                </VBox>
+                <VBox maxWidth="390" minWidth="390" spacing="10" style="-fx-padding: 10;">
+                    <ListView fx:id="categoryList" prefHeight="400" prefWidth="390" />
+                    <Button maxWidth="80" onAction="#handleEditSelected" text="Editar" />
+                </VBox>
+            </HBox>
+        </VBox>
+    </ScrollPane>
+    <Label fx:id="statusLabel" />
+</VBox>

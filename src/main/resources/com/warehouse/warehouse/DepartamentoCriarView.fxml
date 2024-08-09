@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.warehouse.warehouse.controller.DepartamentoCriarController"
+      style="-fx-padding: 20;">
+    <Label fx:id="titleLabel" style="-fx-font-size: 24px;" text="Criar Departamento" />
+    <VBox spacing="10" maxWidth="400">
+        <Label text="Nome:" />
+        <TextField fx:id="nomeField" maxWidth="380" />
+        <Label text="Descrição:" />
+        <TextArea fx:id="descricaoField" maxWidth="380" prefRowCount="4" />
+    </VBox>
+    <Label fx:id="statusLabel" />
+    <Button onAction="#saveDepartamento" text="Salvar" maxWidth="100" alignment="CENTER" styleClass="save-button"/>
+</VBox>

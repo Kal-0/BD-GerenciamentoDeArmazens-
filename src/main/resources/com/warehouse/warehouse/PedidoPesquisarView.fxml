@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.warehouse.warehouse.controller.PedidoPesquisarController"
+      spacing="20" style="-fx-padding: 20;" alignment="TOP_LEFT">
+    <Label fx:id="titleLabel" text="Pesquisar Pedido" style="-fx-font-size: 24px;" />
+    <ScrollPane fitToWidth="true" fitToHeight="true" minWidth="700" maxWidth="700" vbarPolicy="AS_NEEDED" hbarPolicy="AS_NEEDED">
+        <VBox alignment="TOP_LEFT" maxWidth="700">
+            <HBox spacing="20" maxWidth="780" alignment="CENTER_LEFT">
+                <VBox spacing="10" style="-fx-padding: 10;" minWidth="280" maxWidth="280">
+                    <TextField fx:id="searchNumeroField" promptText="Número do Pedido" maxWidth="280"/>
+                    <TextField fx:id="searchClienteField" promptText="Cliente" maxWidth="280"/>
+                    <TextField fx:id="searchFuncionarioField" promptText="Funcionário" maxWidth="280"/>
+                    <Button text="Pesquisar" onAction="#handleSearch" maxWidth="80"/>
+                </VBox>
+                <VBox spacing="10" style="-fx-padding: 10;" minWidth="390" maxWidth="390">
+                    <ListView fx:id="pedidoList" prefHeight="400" prefWidth="390"/>
+                    <Button text="Visualizar" onAction="#handleViewSelected" maxWidth="80"/>
+                </VBox>
+            </HBox>
+        </VBox>
+    </ScrollPane>
+</VBox>

@@ -1,0 +1,87 @@
+.root {
+    -fx-background-color: #f0f0f0;
+}
+
+.label {
+    -fx-text-fill: #333;
+    -fx-font-size: 14px;
+}
+
+.button {
+    -fx-background-color: #ff8a65;
+    -fx-text-fill: white;
+    -fx-border-color: #d84315;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #d84315;
+}
+
+.text-field {
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+    -fx-highlight-fill: #ffccbc;
+    -fx-highlight-text-fill: black;
+    -fx-border-color: #d84315;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.menu-bar {
+    -fx-background-color: #d26f51;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.menu-item {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.menu-item:focused {
+    -fx-background-color: #ff8a65;
+    -fx-text-fill: white;
+}
+
+/* Estilo para ComboBox */
+.combo-box {
+    -fx-border-color: #d84315;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-background-color: white; /* cor de fundo */
+}
+
+.combo-box .arrow {
+    -fx-background-color: #0096c9; /* cor de fundo da seta */
+}
+
+.combo-box .list-cell:filled:hover {
+    -fx-background-color: #ff8a65; /* cor de fundo ao passar o mouse */
+    -fx-text-fill: black; /* cor do texto ao passar o mouse */
+}
+
+.combo-box .list-cell:filled:selected { /* AO SELECIONAR A OPÇÃO*/
+    -fx-background-color: transparent; /* fundo transparente ao selecionar */
+    -fx-text-fill: black; /* cor do texto ao selecionar */
+}
+
+.combo-box .list-cell:filled:selected:hover { /* PASSANDO O MOUSE NAS OPÇOES E HÁ UMA JA SELECIONADA*/
+    -fx-background-color: #0096c9; /* cor de fundo ao passar o mouse em um item selecionado */
+    -fx-text-fill: black; /* cor do texto ao passar o mouse em um item selecionado */
+    -fx-opacity: 0.75; /* opacidade ao passar o mouse em um item selecionado */
+}
+
+.combo-box .list-view .virtual-flow .table-row-cell:selected {
+    -fx-background-color: transparent; /* fundo transparente da célula selecionada */
+    -fx-text-fill: black; /* cor do texto da célula selecionada */
+}
+
+.combo-box .list-view .virtual-flow .table-row-cell:selected:hover {
+    -fx-background-color: #ff8a65; /* cor de fundo ao passar o mouse na célula selecionada */
+    -fx-text-fill: black; /* cor do texto ao passar o mouse na célula selecionada */
+    -fx-opacity: 0.5; /* opacidade ao passar o mouse na célula selecionada */
+}
+
+

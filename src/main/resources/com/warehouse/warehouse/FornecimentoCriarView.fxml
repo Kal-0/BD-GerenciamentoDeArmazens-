@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_LEFT" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.warehouse.warehouse.controller.FornecimentoCriarController" style="-fx-padding: 20;">
+    <Label fx:id="titleLabel" style="-fx-font-size: 24px;" text="Novo fornecimento" />
+    <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" maxWidth="700" minWidth="700" vbarPolicy="AS_NEEDED">
+        <VBox alignment="TOP_LEFT" maxWidth="700">
+            <HBox spacing="20" maxWidth="780" alignment="CENTER_LEFT">
+                <VBox spacing="10" style="-fx-padding: 10;" minWidth="290" maxWidth="390">
+                    <Label text="Produto*:" />
+                    <ComboBox fx:id="nomeProdutoComboBox" maxWidth="280" promptText="Selecione o produto" />
+                    <Label text="Fornecedor*:" />
+                    <ComboBox fx:id="nomeFornecedorComboBox" maxWidth="280" promptText="Selecione o Fornecedor" />
+                </VBox>
+                <VBox spacing="10" style="-fx-padding: 10;" minWidth="290" maxWidth="390">
+                    <Label text="Preço do fornecimento*:" />
+                    <TextField fx:id="precoVendaField" maxWidth="280" />
+                    <Label text="Quantidade fornecida*:" />
+                    <TextField fx:id="quantidadeEstoqueField" maxWidth="280" />
+                </VBox>
+            </HBox>
+        </VBox>
+    </ScrollPane>
+    <Label fx:id="statusLabel" style="-fx-text-fill: red;" text=" " />
+    <Button alignment="CENTER" maxWidth="100" onAction="#saveFornecimento" styleClass="save-button" text="Salvar" />
+</VBox>

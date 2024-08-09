@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.warehouse.warehouse.controller.MainController"
+            stylesheets="@css/style.css">
+    <top>
+        <MenuBar>
+            <Menu text="Inicio">
+                <MenuItem text="Dashboard" onAction="#loadDashboard"/>
+            </Menu>
+            <Menu text="Pedido">
+                <MenuItem text="Novo Pedido" onAction="#pedidoCriar"/>
+                <MenuItem text="Pesquisar" onAction="#pesquisarPedido"/>
+            </Menu>
+            <Menu text="Produto">
+                <MenuItem text="Pesquisar" onAction="#pesquisarProduto"/>
+                <MenuItem text="Criar" onAction="#criarProduto"/>
+                    <Menu text="Categoria">
+                        <MenuItem text="Pesquisar" onAction="#categoriaPesquisar"/>
+                        <MenuItem text="Criar" onAction="#categoriaCriar"/>
+                    </Menu>
+            </Menu>
+            <Menu text="Cliente">
+                <MenuItem text="Pesquisar" onAction="#pesquisarCliente"/>
+                <MenuItem text="Criar" onAction="#criarCliente"/>
+            </Menu>
+            <Menu text="Funcionário">
+                <MenuItem text="Pesquisar" onAction="#pesquisarFuncionario"/>
+                <MenuItem text="Criar" onAction="#criarFuncionario"/>
+                    <Menu text="Departamento">
+                        <MenuItem text="Pesquisar" onAction="#departamentoPesquisar"/>
+                        <MenuItem text="Criar" onAction="#departamentoCriar"/>
+                    </Menu>
+            </Menu>
+            <Menu text="Fornecedor">
+                <MenuItem text="Pesquisar" onAction="#pesquisarFornecedor"/>
+                <MenuItem text="Criar" onAction="#criarFornecedor"/>
+                <Menu text="Fornecimento">
+                    <MenuItem text="Pesquisar" onAction="#fornecimentoPesquisar"/>
+                    <MenuItem text="Criar" onAction="#fornecimentoCriar"/>
+                </Menu>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <StackPane alignment="TOP_LEFT" fx:id="contentArea" />
+    </center>
+</BorderPane>

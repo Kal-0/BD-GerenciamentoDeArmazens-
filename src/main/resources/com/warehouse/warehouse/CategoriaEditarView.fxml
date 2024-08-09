@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.warehouse.warehouse.controller.CategoriaEditarController"
+      style="-fx-padding: 20;">
+    <Label fx:id="titleLabel" style="-fx-font-size: 24px;" text="Editar Categoria" />
+    <ScrollPane fitToWidth="true" fitToHeight="true" minWidth="700" maxWidth="700" vbarPolicy="AS_NEEDED" hbarPolicy="AS_NEEDED">
+        <VBox alignment="TOP_LEFT" maxWidth="700">
+            <HBox spacing="20" maxWidth="780" alignment="CENTER_LEFT">
+                <VBox spacing="10" style="-fx-padding: 10;" minWidth="290" maxWidth="390">
+                    <Label text="Nome:" />
+                    <TextField fx:id="nomeField" maxWidth="280" />
+                    <Label text="Descrição:" />
+                    <TextArea fx:id="descricaoField" maxWidth="280" wrapText="true" />
+                </VBox>
+            </HBox>
+            <Separator maxWidth="Infinity" />
+        </VBox>
+    </ScrollPane>
+    <Label fx:id="statusLabel" />
+    <Button onAction="#updateCategory" text="Atualizar" maxWidth="100" alignment="CENTER" styleClass="save-button"/>
+</VBox>

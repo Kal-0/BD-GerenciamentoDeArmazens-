@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.warehouse.warehouse.controller.PedidoVisualizarController"
+      spacing="20" style="-fx-padding: 20;" alignment="TOP_LEFT">
+    <Label text="Detalhes do Pedido" style="-fx-font-size: 24px;" />
+
+    <VBox spacing="10">
+        <HBox spacing="10">
+            <Label text="Pedido ID:" />
+            <Label fx:id="pedidoIdLabel" />
+        </HBox>
+        <HBox spacing="10">
+            <Label text="Cliente:" />
+            <Label fx:id="clienteLabel" />
+        </HBox>
+        <HBox spacing="10">
+            <Label text="Funcionário:" />
+            <Label fx:id="funcionarioLabel" />
+        </HBox>
+        <HBox spacing="10">
+            <Label text="Valor Total:" />
+            <Label fx:id="valorTotalLabel" />
+        </HBox>
+        <HBox spacing="10">
+            <Label text="Desconto:" />
+            <Label fx:id="descontoLabel" />
+        </HBox>
+        <HBox spacing="10">
+            <Label text="Data de Expedição:" />
+            <Label fx:id="dataExpedicaoLabel" />
+        </HBox>
+    </VBox>
+
+    <Label text="Produtos do Carrinho:" style="-fx-font-size: 18px;" />
+    <ListView fx:id="carrinhoListView" prefHeight="200" />
+</VBox>
